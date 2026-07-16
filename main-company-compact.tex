@@ -1,0 +1,162 @@
+%% Compact Professional CV Template
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=1.2cm,right=1.2cm,top=1.0cm,bottom=1.0cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{parskip}
+\usepackage{tabularx}
+
+% Colors
+\definecolor{headerblue}{RGB}{0,80,140}
+\definecolor{linkblue}{RGB}{0,100,180}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    pdfauthor={Mina Bagherzade Ghazvini}
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\color{headerblue}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\cventry}[5]{%
+    \textbf{#1} \hfill \textit{#2}\\
+    \textit{#3} \hfill #4\\[1pt]
+    #5
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+\begin{center}
+    {\LARGE\bfseries\color{headerblue} Mina Bagherzade Ghazvini}\\[4pt]
+    \faEnvelope~\href{mailto:minabaqerzade@gmail.com}{minabaqerzade@gmail.com} \quad
+    \faMobile~{+34~698~795~219} \quad
+    \faLinkedin~\href{https://linkedin.com/in/mbgh/}{LinkedIn} \quad
+    \faMapMarker*~Barcelona, Spain
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2mm}
+%% PROFESSIONAL SUMMARY
+\section{Professional Summary}
+AI Data Scientist and PhD holder in Intelligent Data Science and AI with over six years of experience bridging applied mathematics, algorithm engineering, and data platform development. Proven expertise in architecting end-to-end data processing pipelines, handling high-dimensional sensor data, and implementing advanced NLP pipelines utilizing Transformer models (BERT, RoBERTa). Highly skilled in Python, SQL, and deploying semantic text processing to structure complex datasets for machine learning consumption. Adept at operating within collaborative, high-performance research environments to transform raw data into reliable, scalable assets for intelligent systems.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2mm}
+%% WORK EXPERIENCE
+\section{Work Experience}
+
+\textbf{Data Science Researcher}, IDEAI lab., UPC, in Collaboration with Siemens Energy, Barcelona, Spain, Jul.~2019 -- Nov.~2025.
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Doctoral research fully funded by Siemens Energy, managing the complete data lifecycle from raw sensor data acquisition to model validation within a high-performance R\&D environment.
+    \item Architected end-to-end data processing and validation pipelines to ingest, clean, and standardize large-scale, multi-sensor industrial time-series data spanning a 15-year period.
+    \item Implemented robust data quality controls, applying Winsorization to cap outliers and feature scaling (Standardization/Normalization) to ensure data reliability without discarding critical operational signals.
+    \item Engineered an unsupervised ensemble clustering framework incorporating consistency thresholds and advanced filtering mechanisms, achieving high confidence rates to ensure the quality and reliability of extracted operational insights.
+    \item Engineered a scalable, Cluster-based Matrix Profile (CMP) algorithm to process 23,000 data points per minute, optimizing for computational efficiency and redundancy reduction.
+    \item Modeled system dynamics and quantified transition probabilities using Hidden Markov Models (HMMs) to map complex structural shifts across distinct operational states.
+\end{itemize}
+
+\vspace{3mm}
+{\color{gray!75}\hrule height 0.5pt}
+\vspace{2mm}
+
+\textbf{Academic Collaborator}, ESADE Business \& AI Department, Barcelona, Spain, Jul.~2024 -- Mar.~2025.
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Engineered an end-to-end text processing pipeline to ingest and structure a multilingual dataset of over 36,000 news articles via custom API data extraction, integrating pre-trained Transformer models (BERT, RoBERTa) via Hugging Face for semantic text analysis.
+    \item Implemented Named Entity Recognition (NER) utilizing spaCy with validation protocols against verified datasets, and built a custom algorithmic aggregation engine weighting NLP models based on confidence levels and silhouette scores.
+\end{itemize}
+
+\vspace{3mm}
+{\color{gray!75}\hrule height 0.5pt}
+\vspace{2mm}
+
+\textbf{Junior Data Analyst}, Faraadid, Tehran, Iran, Sep. 2016 -- Aug. 2017.
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Performed data collection, cleaning, and preliminary statistical analysis for urban traffic management systems, operating within a collaborative Agile/Scrum framework.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2mm}
+%% SKILLS
+\section{Hard Skills}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Python (Expert), SQL, Scikit-learn, Pandas, NumPy, SciPy.
+    \item API Integration, Data Cleaning \& Validation (Winsorization, Scaling), Dimensionality Reduction (PCA, UMAP), High-Dimensional Data Processing.
+    \item Transformer Models (BERT, RoBERTa), Hugging Face, spaCy, NLTK, Named Entity Recognition (NER), Vector Distance Mathematics.
+    \item Time Series Analysis (Matrix Profiles, Anomaly Detection), Ensemble Clustering, Unsupervised Learning (K-Means, GMM, HDBSCAN), Statistical Modeling (HMMs).
+    \item Cloud Platforms (AWS SageMaker, S3), Version Control (Git), Agile/Scrum methodologies.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2mm}
+%% SOFT SKILLS
+\section{Soft Skills}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Proven ability to bridge research methodologies with applied software engineering.
+    \item Strong collaborative skills, proven in cross-functional R\&D and academic environments.
+    \item Effective technical communication, including translating complex data architectures into actionable insights.
+    \item Proactive and autonomous problem-solving mindset with a focus on data quality.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2mm}
+%% CERTIFICATES
+\section{Certificates \& Trainings}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Sequences, Time Series and Prediction, DeepLearning.AI - Coursera.
+    \item Cluster Analysis in Data Mining, University of Illinois - Coursera.
+    \item Version Control with Git, Atlassian - Coursera.
+    \item SQL for Data Science, University of California, Davis - Coursera.
+    \item Introduction to Deep Learning \& Neural Networks with Keras, IBM - Coursera.
+    \item Introduction to Natural Language Processing in Python - DataCamp.
+    \item Looker and LookML - The Complete Course for Beginners - Udemy.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2mm}
+%% HONORS & AWARDS
+\section{Honors \& Awards}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+    \item Awarded the prestigious Formación de Personal Investigador (FPI-UPC 2019) grant for doctoral studies.
+    \item Awarded full-tuition scholarships for BSc (IUST) and MSc (TMU) in recognition of academic merit.
+    \item Ranked 2/80 in BSc in Applied Mathematics; direct admission to MSc program, waiving the national entrance exam.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2mm}
+%% EDUCATION
+\section{Education}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{PhD}, Intelligent Data Science and Artificial Intelligence, UPC, Barcelona, Spain & 2019 -- 2025 \\
+\textbf{MSc}, Applied Mathematics - Numerical Analysis, TMU, Tehran, Iran & 2013 -- 2016 \\
+\textbf{BSc}, Applied Mathematics, IUST, Tehran, Iran & 2009 -- 2013 \\
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{2mm}
+%% LANGUAGES & WORK PERMIT
+\section{Languages \& Work Permit}
+\textbf{Languages:} Persian (Native) | English (Fluent) | Spanish (Elementary) \\[2pt]
+\textbf{Work Permit:} Holder of a long-term EU work and residency permit.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
